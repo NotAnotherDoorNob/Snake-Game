@@ -1,0 +1,108 @@
+:root {
+    --black: rgb(0, 0, 0);
+    --green: rgb(22, 255, 138);
+  }
+
+
+html{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--black);
+    background-image: url("images/background.png");
+    background-color: #000000;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+}
+
+
+#logo {
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+img {
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: 560px 300px;
+}
+
+#statsContainer {
+    border: 10px solid var(--green);
+    border-left: 0px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    display: grid;
+    grid-template-rows: 25% 50% 25%;
+}
+
+#canvasContainer {
+    border: 10px solid var(--green);
+    width: 560px;
+    height: 560px; 
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+#statSubGrid1, #statSubGrid2, #statSubGrid3 {
+    padding: 20px;
+    margin-left: 10px;
+    color: var(--green);
+    font-family: 'Press Start 2P', cursive;
+}
+
+#statSubGrid1 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    font-size: 24px;
+}
+
+#statSubGrid2 {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    font-size: 24px;
+}
+
+#menuText {
+    font-size: 14px;
+    padding-top: 75px;
+}
+
+#menuButtons {
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#play, #pause {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+#statSubGrid3 {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    position: relative;
+    font-size: 16px;
+    vertical-align: bottom;
+}
+
+#text2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 20px;
+}

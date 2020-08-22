@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.min.js"></script>
+   
+    <title>Snake!</title>
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"> 
+    <link rel="icon"  type="image/png"  href="favIcon.png"/>
+  </head>
+  <body>
+    <audio src="sound/background.mp3" type="audio/mpeg" id="song"></audio>  
+    <div id="logo">
+      <img src="images/logo.png" height='100px'>
+    </div>
+    <div class="container">
+      <div id="canvasContainer"></div>
+      <div id="statsContainer">
+        <div id="statSubGrid1">
+          Current Score: <a id="currScore" ></a>
+        </div>
+        <div id="statSubGrid2"> 
+          High Score: <a id="highScore"></a>
+            <div id="menuText">
+              <a>Background Music</a>
+              <div id="menuButtons">
+                <div id="play">
+                  <input id="playButton" type="image" width="50" height="50" alt="Play Music"
+                  src="images/play.png">
+                </div>
+                <div id="pause">
+                  <input id="pauseButton" type="image" width="50" height="50" alt="Pause Music"
+                  src="images/pause.png">
+                </div>
+              </div>
+            </div>
+        </div>    
+        <div id="statSubGrid3">
+          <a id="text1">Press arrow keys to move</a>
+          <a id="text2">Press shift to pause</a>
+        </div>
+      </div>
+    </div>
+    <script src="sketch.js"></script>
+    <script src="snake.js"></script>
+  </body>
+</html>
